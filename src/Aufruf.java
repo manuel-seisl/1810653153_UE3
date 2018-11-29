@@ -6,19 +6,11 @@ public class Aufruf
     public static void main(String[] args)
     {
 
-        Vehicle a = new Vehicle();
-        a.name = "Vehicle A";
-        a.power = 55;
-        a.weight = 1234.5;
-
-        Vehicle b = new Vehicle();
-        b.name = "Vehicle B";
-        b.power = 60;
-        b.weight = 2345.6;
-
+        Vehicle a = new Vehicle(50, 10.5, "Vehicle A");
         JOptionPane.showMessageDialog(null, a.printName());
         a.calculatePower();
 
+        Vehicle b = new Vehicle(60, 20.5, "Vehicle B");
         JOptionPane.showMessageDialog(null, b.printName());
         b.calculatePower();
 
