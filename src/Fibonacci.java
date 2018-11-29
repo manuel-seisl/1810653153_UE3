@@ -3,16 +3,14 @@ public class Fibonacci
 
     public static void main(String[] args)
     {
-
         System.out.println(rekursiv(8));
         System.out.println(iterative(8));
-
     }
 
     public static int rekursiv(int i){
 
-        /* Die iterative Variante ist nicht performant,
-           da es sich selbst aufruft und die Methode parallel mehrfach läuft
+        /* Die "Rekursive" Variante ist nicht performant,
+           da sich die Methode selbst aufruft und die Methode parallel mehrfach läuft
         */
 
         if(i <= 0){
@@ -27,7 +25,7 @@ public class Fibonacci
 
     public static int iterative(int j){
 
-        /* Die iterative Variante ist viel performanter,
+        /* Die "Iterative" Variante ist viel performanter,
            da nur so viele Schleifendurchgänge gemacht werden, wie notwendig
         */
 
